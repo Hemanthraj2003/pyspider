@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Example...</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            /* border: 10px solid black; */
+        }
+        input {
+            font-size: large;
+            padding: 10px;
+            border-radius: 10px;
+            border-color: rgba(240, 248, 255, 0);
+        }
+        input[type="Submit"]  {
+            background-color: teal;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    
+    <form style="background-color: rgb(244, 242, 242); border-radius: 20px; padding: 40px; margin: auto; width: 30%; display: flex; flex-direction: column; gap: 20px; font-size: x-large;">
+        <input type="range" name="range" max="80" min="10" >
+        <input type="text" name="fname" placeholder="First-name">
+        <input type="text" name="lname"  placeholder="Last-name">
+        <input type="number" min="0" max="100" name="age" placeholder="Enter Your Age">
+        
+        <input type="datetime-local" name="dob" placeholder="DOB" >
+        <input type="email" name="email" placeholder="Enter your email id">
+        <input type="tel" name="contact" placeholder="Phone Number" pattern="[6-9]{1}[0-9]{9}">
+        <input type="password" name="password" placeholder="password">
+        <input type="Submit" >
+    </form>
+</body>
+</html>
