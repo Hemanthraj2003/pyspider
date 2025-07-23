@@ -1,0 +1,31 @@
+Write a Java Program to Print Characters in a String
+2. Write a Java program to print ASCII values of String Characters
+3.Write a Java program to concat Strings
+4. Write a Java program to convert Lowercase to Uppercase
+5. Write a Java program to convert Uppercase to Lowercase
+6.Write a Java program to count Total Characters in a String
+7. Write a Java program to count Total Words in a String 
+8.Write a Java programs to count Alphabets Digits & Special Characters in a String
+9.Write a Java program to count Vowels and Consonants in a String
+10. Write a Java program to count Total Occurrence of Character in a String
+11. Write a Java program to find All Occurrences of a Character in a String
+12. Write a Java program to find First Character Occurrence in a String
+13. Write a Java program to find Last Character Occurrence in a String
+14. Write a Java program to Find Maximum Occurring Character in a String
+15. Write a Java program to Find Minimum Occurring Character in a String
+16. Write a Java program to find Frequency of each Character in a String
+17. Write a Java program to check Palindrome String
+18.Write a Java program to print First and Last Character in a String
+19. Write a Java program to remove All Occurrences of a Character in a String
+20.Write a Java program to remove First and Last Character in a String
+21.Write a Java program to remove First Character Occurrence in a String
+22. Write a Java program to remove Last Character Occurrence in a String
+23.Write a Java program To remove all whitespaces from a String
+24. Write a Java program to replace First Character Occurrence in a String
+25. Write a Replace Last Character Occurrence in a String
+26. Write a Reverse Letters in a String
+27. Write a java Programs Reverse a String
+28. Write a java Programs String Reverse using Recursion
+29.Write a java Programs Toggle All Characters in a String
+30.Write a java Programs to String Comparison
+31.Write a java Programs Sort Strings in Alphabetical Order
