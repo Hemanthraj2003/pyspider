@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance Forms</title>
+</head>
+<body>
+    <form  method="post" >
+        <fieldset >
+            <legend align="center">Gender</legend>
+            <label>Gender: </label><br>
+            
+            <label for="Male" >Male</label>
+            <input type="radio" value="Male" id="Male" name="Gender" >
+            
+            <label for="Female" >Female</label>
+            <input type="radio" value="Female" name="Gender" id="Female" >
+            
+            <label for="Others" >Others</label>
+            <input type="radio" id="Others" value="Other" name="Gender" >
+        </fieldset>
+        <br>
+        <br>
+        <br>
+        <label>Language</label><br>
+        <label for="eng">English</label>
+        <input type="checkbox" name="lang" value="English" id="eng">
+        <label for="kan">Kannada</label>
+        <input type="checkbox" name="lang" value="Kannada" id="kan">
+        <label for="hin">Hindi</label>
+        <input type="checkbox" name="lang" value="Hindi" id="hin">
+        <br>
+        <br>
+        <label >Places:</label>
+        <select name="place" >
+            <option value="banglore">banglore</option>
+            <option value="Mysode">Mysode</option>
+            <option value="Hassan">Hassan</option>
+            <option value="Ooty">Ooty</option>
+        </select>
+        <br>
+        <br>
+        <textarea name="Comment"  cols="30" rows="10" placeholder="Comment Box"></textarea>
+        <br>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+    
+</body>
+</html>
