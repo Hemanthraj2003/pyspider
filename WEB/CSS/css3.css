@@ -1,0 +1,21 @@
+.box{
+    border: solid pink 2px;
+    padding: 100px;
+    
+    width: 300px;
+    background-color: pink;    
+    margin: auto;
+    margin-top: 50px;
+    color: white;
+
+
+}
+
+.circle {
+    background-color: pink;
+    height: 150px;
+    width: 150px;
+    margin-top: 500px;
+    margin-left: 300px;
+    border-radius: 100%;
+}

@@ -1,0 +1,62 @@
+.para {
+    border-style: dashed;
+    border-radius: 10px;
+    border-color: aquamarine;
+    border-width: 5px;
+    padding: 10px;
+}
+
+.para1 {
+    margin-top: 20px;
+    border-top-style: double;
+    border-top-width: 10px;
+    border-top-color: green;
+
+    padding: 10px;
+    border-left: 8px solid blue;
+    border-top-left-radius: 10px;
+}
+
+.para2 {
+    border-style: solid;
+    width: 40%;
+    height: 250px;
+    overflow: auto;
+    box-shadow: 10px 10px gray;
+}
+
+.square {
+    border-style: solid;
+    border-color: blue;
+    border-width: 2px;
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+}
+
+.circle {
+    margin-top: 10px;
+    height: 100px;
+    width: 100px;
+    border-radius:100px;
+    background-color: blue;
+}
+
+.oval{
+    margin-top: 10px;
+    height: 150px;
+    width: 100px;
+    border-radius:50%;
+    background-color: blue;
+
+}
+
+.triangle {
+   border-top: 200px solid black;
+   border-left: 200px solid white;
+   border-right: 200px solid white;
+   border-bottom: 200px solid black;
+   width: 0px;
+   right: 0px;
+
+}
