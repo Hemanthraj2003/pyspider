@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#Hero {
+  height: 80vh;
+  background-image: url(./assests/shadi-banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-position: center; */
+}
+
+.navbar {
+  display: flex;
+  justify-content: end;
+  gap: 50px;
+  padding: 50px 100px;
+}
+
+.navButtons {
+  padding: 14px 20px;
+  border-radius: 20px;
+  font-weight: 700;
+  color: white;
+}
+
+#loginButton {
+  background: grey;
+}
+
+#joinButton {
+  background-color: #368d87;
+}
+
+#tradeMarkButton {
+  width: 200px;
+  margin: 15px auto;
+  border-radius: 20px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 14px 20px;
+  background-color: #ff716f;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: 20px auto;
+}
+
+.aboutCards {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 350px;
+  text-align: center;
+}
+
+.aboutCards img {
+  width: 300px;
+  height: 180px;
+}
+
+#section02Title {
+  margin: 35px auto;
+  width: 250px;
+  text-align: center;
+}
