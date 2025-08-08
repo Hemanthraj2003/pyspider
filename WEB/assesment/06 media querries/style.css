@@ -6,6 +6,12 @@ h1 {
   text-align: center;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .box {
   border: 2px saddlebrown solid;
   height: 250px;
@@ -111,11 +117,57 @@ h1 {
   }
 }
 
+.imageGroup {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  row-gap: 2rem;
+  justify-content: space-around;
+}
+
+.images {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: hotpink;
+  font-size: 24px;
+  font-weight: 700;
+  border-radius: 20px;
+  padding-bottom: 20px;
+}
+
+.images img {
+  height: 250px;
+  width: 280px;
+  border-radius: 20px;
+}
+
+.images img:hover {
+  height: 270px;
+  width: 300px;
+  box-shadow: 0 0 20px 3px hotpink;
+}
+
+@media screen and (min-width: 930px) and (max-width: 1200px) {
+  .imageGroup {
+    grid-template-columns: auto auto auto;
+  }
+}
+
 @media screen and (min-width: 900px) and (max-width: 1050px) {
   .boxgroup {
     grid-template-columns: auto auto auto auto;
   }
 }
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  .imageGroup {
+    grid-template-columns: auto auto;
+  }
+}
+
 @media screen and (min-width: 670px) and (max-width: 900px) {
   .boxgroup {
     grid-template-columns: auto auto auto;
@@ -138,5 +190,9 @@ h1 {
 
   .navbar #menuIcon {
     display: flex;
+  }
+  .imageGroup {
+    grid-template-columns: auto;
+    justify-content: center;
   }
 }
