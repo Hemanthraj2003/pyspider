@@ -1,0 +1,75 @@
+:root {
+  --jinx-blue: #0661b4;
+  --primary-color: #a63f8a;
+  --shimmerPink: #c61999;
+  --white: rgb(186, 185, 185);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+
+  background: linear-gradient(
+    -45deg,
+    var(--shimmerPink) 10%,
+    #000 50%,
+    var(--jinx-blue) 100%
+  );
+  background-size: 200% 200%;
+  animation: backgroundStyle 15s ease infinite;
+}
+
+.nav {
+  margin: 30px 200px;
+  display: flex;
+  padding: 20px;
+  border-radius: 20px;
+  color: var(--white);
+  border: 2px var(--white) solid;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  animation: changeDesign 15s infinite linear;
+  margin: auto;
+  background-image: conic-gradient(rgba(255, 255, 255, 0), blue);
+}
+
+.circle {
+  width: 90%;
+  height: 90%;
+  background-color: white;
+  border-radius: 50%;
+}
+
+@keyframes changeDesign {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes backgroundStyle {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
