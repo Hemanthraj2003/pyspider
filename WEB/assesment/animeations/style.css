@@ -52,6 +52,20 @@ body {
   background-color: white;
   border-radius: 50%;
 }
+.movingContainer {
+  width: 50vw;
+  height: 50vh;
+  border: 2px solid white;
+  position: relative;
+}
+
+.moving {
+  height: 100px;
+  width: 100px;
+  background-color: white;
+  animation: moving 5s infinite;
+  position: absolute;
+}
 
 @keyframes changeDesign {
   0% {
@@ -59,6 +73,29 @@ body {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes moving {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  25% {
+    top: 0;
+    right: 0;
+  }
+  50% {
+    bottom: 0;
+    left: 100%;
+  }
+  75% {
+    top: 100%;
+    left: 0;
+  }
+  100% {
+    top: 0;
+    left: 0;
   }
 }
 
