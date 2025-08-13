@@ -1,0 +1,67 @@
+.fanContainer {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  margin: auto;
+}
+
+.blade1 {
+  position: absolute;
+  top: 45%;
+  left: 20%;
+  height: 100px;
+  rotate: 45deg;
+  width: 350px;
+
+  border-radius: 100% 0;
+  /* border: 2px solid black; */
+  background: black;
+  animation: blade1 3s linear infinite;
+  box-shadow: 3px 3px 20px rgb(211, 35, 167);
+}
+.blade2 {
+  position: absolute;
+  top: 45%;
+  left: 20%;
+  rotate: -45deg;
+  box-shadow: 3px 3px 20px rgb(211, 35, 167);
+
+  height: 100px;
+  width: 350px;
+  border-radius: 100% 0;
+  /* border: 2px solid black; */
+  animation: blade1 3s linear infinite;
+
+  background: black;
+}
+.circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 50px;
+  width: 50px;
+  border: 2px solid black;
+  border-radius: 50%;
+  background: white;
+  box-shadow: inset 3px 3px 10px rgb(211, 35, 167);
+}
+
+/* @keyframes blade1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(1000deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+} */
+@keyframes blade2 {
+  0% {
+    transform: rotate(10000deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
