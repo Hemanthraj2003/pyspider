@@ -40,7 +40,7 @@
       class="HomeSection01 flex flex-col-reverse md:flex-row justify-evenly items-center"
     >
       <div
-        class="h-[50%] md:h-[100%] w-[100%] pt-10 px-10 text-center md:text-left"
+        class="h-[50%] md:h-[100%] w-[100%] md:ps-20 px-10 text-center md:text-left"
       >
         <div class="text-[40px] md:text-[48px] font-[700]">
           Welcome to Prime Video
@@ -50,7 +50,7 @@
           Amazon Originals
         </div>
         <div
-          class="text-black bg-gray-100 p-4 rounded-sm text-center text-[15px] w-[50%] my-8 m-auto"
+          class="text-black bg-gray-100 p-4 rounded-sm text-center text-[15px] w-[50%] my-8 m-auto md:m-0 md:my-8"
         >
           Join Prime Video Now
         </div>
@@ -66,17 +66,48 @@
     </div>
 
     <!-- Home Section 02 -->
-    <div class="flex flex-col-reverse md:flex-row justify-between p-5">
-      <div class="">
-        <div class="font-[700] text-xl">Movie rentals on Prime Video</div>
-        <div></div>
-        <div class="bg-white text-black flex font-[500] text-md p-3 rounded-md">
+    <div class="flex flex-col-reverse md:flex-row justify-between p-5 mt-10">
+      <div class="md:ps-20 text-center md:text-left mt-20">
+        <div class="text-[40px] md:text-[48px] font-[700]">Movie rentals on Prime Video</div>
+        <div class="my-4 text-[20px]">
+          Early Access to new movies, before digital subscription
+        </div>
+        <div class="bg-white text-black flex font-[500] text-md p-3 rounded-md w-[200px] justify-center my-8  m-auto md:m-0 md:my-8"">
           Rent Now
         </div>
       </div>
-      <div class="w-[70%]">
-        <img src="./assests/section02Bgjpg.jpg" alt="" srcset="" />
+      <div class="w-full md:w-[70%] ">
+        <img src="./assests/section02.png" class="w-full h-full"  alt="" srcset="" />
       </div>
     </div>
+
+    <!-- section 03 -->
+    <div class="flex flex-col-reverse   md:flex-row justify-between p-5 md:px-20 my-10">
+      <div class="w-full md:w-1/2 p-3 text-center md:text-left mt-10">
+        <div class="text-[30px] md:text-[42px] font-[700]">
+          Your favorite subscriptions all in one place
+        </div>
+        <div class="text-[20px] font-[300]">
+          Customers can subscribe to get access to a variety of premium and specialty content, easily accessible within the Prime Video app
+        </div>
+      </div>
+      <div class="w-full md:w-1/2">
+        <img src="./assests/section03image.png" alt="" srcset="">
+      </div>
+
+    </div>
+
+    <!-- footer -->
+    <footer class="bg-[#222222] text-white p-5 flex flex-col justify-center items-center gap-5">
+        <div class="text-xl md:text-[35px]">Prime Video</div>      
+        <div class="text-[#78b6f0] text-sm md:text-lg flex gap-5">
+          <div>Terms and Privacy Notice</div>
+          <div>Send Us Feedback</div>
+          <div>Help</div>
+        </div>     
+        <div class="text-[#8197a4] text-sm md:text-md">
+          <i class="fa-solid fa-copyright"></i> 2023, Amazon.com, Inc. or its affiliates
+        </div> 
+    </footer>
   </body>
 </html>
