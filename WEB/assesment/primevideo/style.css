@@ -9,37 +9,39 @@ body {
 
 header {
   display: flex;
+  width: 100vw;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 20px;
-  margin: 0 auto;
+
   background: rgba(0, 0, 0, 0.8);
   font-size: 18px;
-  width: 80vw;
 }
 
 /* HEADER PARTS */
 
-.menuButton {
-  display: none;
-}
 .logoContainer {
   font-weight: 700;
-  font-size: 24px;
 }
-.menuItems {
-  display: flex;
-  gap: 40px;
+
+.menuItems > div {
+  padding: 10px 20px;
+  font-weight: 500;
+  color: white;
+  border-radius: 10px;
+}
+
+.menuItems > div:hover {
+  cursor: pointer;
+  background: rgb(255, 255, 255);
+  color: black;
 }
 .leftSection {
   display: flex;
   align-items: center;
-  gap: 30px;
 }
 .rightSection {
   display: flex;
   align-items: center;
-  gap: 40px;
 }
 /*  END OF HEADER PARTS */
 
@@ -48,6 +50,20 @@ header {
   height: 100%;
   width: 2px;
   border-right: 1px solid white;
+  border-radius: 0 !important;
+}
+
+.profileIcon {
+  border-radius: 50%;
+  padding: 5px;
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff43;
+  align-items: center;
+  justify-content: center;
+}
+.divider:hover {
+  background: none !important;
 }
 .searchAndLang {
   display: flex;
@@ -64,6 +80,21 @@ header {
   font-size: 15px;
 }
 /* END OF HEADER ITEMS */
+
+@media screen and (max-width: 1000px) and (min-width: 300px) {
+  .menuItems {
+    display: none;
+  }
+
+  .joinPrimeButton {
+    display: none;
+  }
+
+  .menuButton {
+    display: flex;
+    align-items: center;
+  }
+}
 
 /* END OF HEADER SECTION */
 

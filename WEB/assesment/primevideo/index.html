@@ -12,11 +12,13 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <div class="menuButton"></div>
-      <div class="leftSection">
-        <div class="logoContainer">Prime Video</div>
-        <div class="menuItems">
+    <header class="px-3 py-5 md:p-5">
+      <div class="menuButton text-sm md:text-md lg:flex xl:hidden">
+        MENU <i class="fa-solid fa-angle-down"></i>
+      </div>
+      <div class="leftSection gap-14">
+        <div class="logoContainer text-md md:text-[24px]">Prime Video</div>
+        <div class="menuItems hidden xl:flex">
           <div>Home</div>
           <div>TV Shows</div>
           <div>Movies</div>
@@ -25,12 +27,14 @@
           <div>Subscriptions</div>
         </div>
       </div>
-      <div class="rightSection">
+      <div class="rightSection gap-2 md:gap-7">
         <div class="searchAndLang">
           <div><i class="fa-solid fa-magnifying-glass"></i></div>
-          <div>EN <i class="fa-solid fa-angle-down"></i></div>
+          <div class="text-sm md:text-md">
+            EN <i class="fa-solid fa-angle-down"></i>
+          </div>
         </div>
-        <div class="profileIcon">
+        <div class="profileIcon hidden sm:flex">
           <i class="fa-solid fa-user"></i>
         </div>
         <div class="joinPrimeButton">Join Now</div>
@@ -67,47 +71,61 @@
 
     <!-- Home Section 02 -->
     <div class="flex flex-col-reverse md:flex-row justify-between p-5 mt-10">
-      <div class="md:ps-20 text-center md:text-left mt-20">
-        <div class="text-[40px] md:text-[48px] font-[700]">Movie rentals on Prime Video</div>
-        <div class="my-4 text-[20px]">
-          Early Access to new movies, before digital subscription
+      <div class="md:ps-20 text-center md:text-left">
+        <div class="text-[40px] md:text-[48px] font-[700]">
+          Movie rentals on Prime Video
         </div>
-        <div class="bg-white text-black flex font-[500] text-md p-3 rounded-md w-[200px] justify-center my-8  m-auto md:m-0 md:my-8"">
+        <div class="my-4 text-[20px]">
+          arly Access to new movies, before digital subscription
+        </div>
+        <div
+          class="bg-white text-black flex font-[500] text-md p-3 rounded-md w-[200px] justify-center my-8 m-auto md:m-0 md:my-8"
+        >
           Rent Now
         </div>
       </div>
-      <div class="w-full md:w-[70%] ">
-        <img src="./assests/section02.png" class="w-full h-full"  alt="" srcset="" />
+      <div class="w-full md:w-[70%]">
+        <img
+          src="./assests/section02.png"
+          class="w-full h-full"
+          alt=""
+          srcset=""
+        />
       </div>
     </div>
 
     <!-- section 03 -->
-    <div class="flex flex-col-reverse   md:flex-row justify-between p-5 md:px-20 my-10">
+    <div
+      class="flex flex-col-reverse md:flex-row justify-between p-5 md:px-20 my-10"
+    >
       <div class="w-full md:w-1/2 p-3 text-center md:text-left mt-10">
         <div class="text-[30px] md:text-[42px] font-[700]">
           Your favorite subscriptions all in one place
         </div>
         <div class="text-[20px] font-[300]">
-          Customers can subscribe to get access to a variety of premium and specialty content, easily accessible within the Prime Video app
+          Customers can subscribe to get access to a variety of premium and
+          specialty content, easily accessible within the Prime Video app
         </div>
       </div>
       <div class="w-full md:w-1/2">
-        <img src="./assests/section03image.png" alt="" srcset="">
+        <img src="./assests/section03image.png" alt="" srcset="" />
       </div>
-
     </div>
 
     <!-- footer -->
-    <footer class="bg-[#222222] text-white p-5 flex flex-col justify-center items-center gap-5">
-        <div class="text-xl md:text-[35px]">Prime Video</div>      
-        <div class="text-[#78b6f0] text-sm md:text-lg flex gap-5">
-          <div>Terms and Privacy Notice</div>
-          <div>Send Us Feedback</div>
-          <div>Help</div>
-        </div>     
-        <div class="text-[#8197a4] text-sm md:text-md">
-          <i class="fa-solid fa-copyright"></i> 2023, Amazon.com, Inc. or its affiliates
-        </div> 
+    <footer
+      class="bg-[#222222] text-white p-5 flex flex-col justify-center items-center gap-5"
+    >
+      <div class="text-xl md:text-[35px]">Prime Video</div>
+      <div class="text-[#78b6f0] text-sm md:text-lg flex gap-5">
+        <div>Terms and Privacy Notice</div>
+        <div>Send Us Feedback</div>
+        <div>Help</div>
+      </div>
+      <div class="text-[#8197a4] text-sm md:text-md">
+        <i class="fa-solid fa-copyright"></i> 2023, Amazon.com, Inc. or its
+        affiliates
+      </div>
     </footer>
   </body>
 </html>
