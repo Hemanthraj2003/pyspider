@@ -13,7 +13,7 @@ header {
   align-items: center;
   justify-content: space-between;
 
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.26);
   font-size: 18px;
 }
 
@@ -28,6 +28,11 @@ header {
   font-weight: 500;
   color: white;
   border-radius: 10px;
+}
+
+.selected {
+  background: white !important;
+  color: black !important;
 }
 
 .menuItems > div:hover {
@@ -102,4 +107,18 @@ header {
 .HomeSection01 {
   width: 100%;
   background: linear-gradient(90deg, black 40%, #0731a1 100%);
+}
+
+.posterInsetShadow {
+  background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.842) 35%,
+      rgba(0, 0, 0, 0.373) 50%
+    ),
+    url(./assests/posters/largeTVSHow\ poster.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.wordSpacing {
+  word-spacing: 0.5rem;
 }

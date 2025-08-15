@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prime Shows</title>
+    <script
+      src="https://kit.fontawesome.com/d2fafa35d8.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="px-3 py-5 md:p-5">
+      <div class="menuButton text-sm md:text-md lg:flex xl:hidden">
+        MENU <i class="fa-solid fa-angle-down"></i>
+      </div>
+      <div class="leftSection gap-14">
+        <div class="logoContainer text-md md:text-[24px]">Prime Video</div>
+        <div class="menuItems hidden xl:flex">
+          <div>Home</div>
+          <div class="selected">TV Shows</div>
+          <div>Movies</div>
+          <div>Live TV</div>
+          <div class="divider">&nbsp;</div>
+          <div>Subscriptions</div>
+        </div>
+      </div>
+      <div class="rightSection gap-2 md:gap-7">
+        <div class="searchAndLang">
+          <div><i class="fa-solid fa-magnifying-glass"></i></div>
+          <div class="text-sm md:text-md">
+            EN <i class="fa-solid fa-angle-down"></i>
+          </div>
+        </div>
+        <div class="profileIcon hidden sm:flex">
+          <i class="fa-solid fa-user"></i>
+        </div>
+        <div class="joinPrimeButton">Join Now</div>
+      </div>
+    </header>
+    <div
+      class="flex justify-start items-end posterInsetShadow h-[30vh] sm:h-[50vh] lg:h-[70vh]"
+    >
+      <div
+        class="flex flex-col text-gray-300 w-1/2 p-5 md:p-10 md:gap-7 m-2 md:m-10"
+      >
+        <div class="text-xl md:text-5xl">Movie Title Goes Here</div>
+        <div class="text-blue-400 text-[10px] md:text-[14px] wordSpacing">
+          Tamil | Kannada | Hindhi
+        </div>
+        <div class="text-[10px] md:text-[24px] font-[400]">
+          <i class="fa-solid fa-bag-shopping" style="color: #ffd43b"></i> watch
+          with a prime membership
+        </div>
+        <div class="gap-5 items-center hidden lg:flex">
+          <div
+            class="bg-white/30 text-white md:text-lg text-[20px] p-1 md:p-3 rounded-md"
+          >
+            Join Prime
+          </div>
+          <div
+            class="w-[50px] h-[50px] rounded-full bg-white/30 text-white flex items-center justify-center text-[25px] font-thin"
+          >
+            <i class="fa-solid fa-plus"></i>
+          </div>
+          <div
+            class="w-[50px] h-[50px] rounded-full bg-white/30 text-white flex items-center justify-center text-[25px] font-thin"
+          >
+            <i class="fa-solid fa-circle-info"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
