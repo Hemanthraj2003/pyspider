@@ -122,7 +122,3 @@ header {
 .wordSpacing {
   word-spacing: 0.5rem;
 }
-
-img:hover {
-  scale: 1.2;
-}
