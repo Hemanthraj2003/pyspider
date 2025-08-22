@@ -1,0 +1,18 @@
+.heroImage {
+  background: url("./assets/herobg.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+}
+
+.heroImage::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: radial-gradient(rgba(0, 0, 0, 0.249) 5%, black 90%);
+  z-index: -1;
+}

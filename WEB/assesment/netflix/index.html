@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix</title>
+    <script
+      src="https://kit.fontawesome.com/d2fafa35d8.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-black">
+    <!-- Hero section -->
+    <div class="h-[50vh] md:h-[70vh] lg:h-[85vh] heroImage mb-8">
+      <!-- NavBar -->
+
+      <div class="flex justify-between top-0 left-0 px-5 md:px-25">
+        <div>
+          <img
+            src="./assets/Netflix-Logo.png"
+            class="w-[100px] sm:w-[150px]"
+            alt=""
+            srcset=""
+          />
+        </div>
+
+        <div class="flex gap-2 sm:gap-10">
+          <div class="flex justify-center items-center">
+            <div
+              class="flex items-center gap-1 px-3 py-2 cursor-pointer md:py-1 border-[1px] border-[#5e5e5e] rounded-sm text-white"
+            >
+              <i class="fa-solid fa-language"></i>
+              <span class="hidden md:flex"> English</span>
+              <i class="fa-solid fa-caret-down"></i>
+            </div>
+          </div>
+          <div class="flex justify-center items-center">
+            <div
+              class="px-3 py-1 bg-red-600 text-white rounded-sm cursor-pointer"
+            >
+              Sign-In
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex w-[100%] h-[100%] justify-center items-center">
+        <div
+          class="text-white w-[70vw] md:w-[40vw] text-center flex flex-col justify-center items-center"
+        >
+          <div class="font-extrabold text-3xl lg:text-5xl">
+            Unlimited movies, TV shows and more
+          </div>
+          <div class="text-sm md:text-lg">
+            Starts at ₹149. Cancel at any time.
+          </div>
+          <div class="text-sm md:text-lg my-3 px-4">
+            Ready to watch? Enter your email to create or restart your
+            membership.
+          </div>
+          <div class="flex-col flex xl:flex-row w-full gap-5 justify-center">
+            <div
+              class="text-sm rounded-md text-gray-300 px-5 py-3 border border-gray-400 xl:w-3/5 text-start"
+            >
+              Email Address
+            </div>
+            <div
+              class="text-sm rounded-xl px-1 md:px-8 py-3 bg-red-500 w-full md:w-3/5 xl:w-auto flex m-auto items-center justify-center"
+            >
+              Get Started <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- image carosoule -->
+    <div class="flex flex-col mx-4 md:mx-8 lg:mx-16">
+      <div class="text-white text-lg lg:text-xl">Trending Now</div>
+      <div class="flex justify-around px-8 mt-8">
+        <div class="flexw-[200px]">
+          <img src="./assets/01.webp" alt="" class="w-full h-full" srcset="" />
+        </div>
+        <div class="flex w-[200px]">
+          <img src="./assets/02.webp" alt="" class="w-full h-full" srcset="" />
+        </div>
+        <div class="w-[200px] hidden md:flex">
+          <img src="./assets/03.webp" alt="" class="w-full h-full" srcset="" />
+        </div>
+        <div class="w-[200px] hidden lg:flex">
+          <img src="./assets/04.webp" alt="" class="w-full h-full" srcset="" />
+        </div>
+        <div class="w-[200px] hidden xl:flex">
+          <img src="./assets/05.webp" alt="" class="w-full h-full" srcset="" />
+        </div>
+        <div class="w-[200px] hidden xl:flex">
+          <img src="./assets/02.webp" alt="" class="w-full h-full" srcset="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ's -->
+    <div class="mx-4 md:mx-8 lg:mx-16 my-16">
+      <div class="text-lg md:text-2xl text-white font-bold">
+        Frequently Asked Questions
+      </div>
+      <div
+        class="flex flex-col gap-5 mx-2 md:mx-7 text-white text-sm md:text-lg lg:text-xl m-8"
+      >
+        <div
+          class="p-6 bg-slate-800 hover:bg-slate-700 w-5/6 flex justify-between px-3 md:px-10 m-auto"
+        >
+          <div>What is Netflix ?</div>
+          <div><i class="fa-solid fa-plus"></i></div>
+        </div>
+        <div
+          class="p-6 bg-slate-800 hover:bg-slate-700 w-5/6 flex justify-between px-3 md:px-10 m-auto"
+        >
+          <div>How much does Netflix Cost ?</div>
+          <div><i class="fa-solid fa-plus"></i></div>
+        </div>
+        <div
+          class="p-6 bg-slate-800 hover:bg-slate-700 w-5/6 flex justify-between px-3 md:px-10 m-auto"
+        >
+          <div>Where can i watch ?</div>
+          <div><i class="fa-solid fa-plus"></i></div>
+        </div>
+        <div
+          class="p-6 bg-slate-800 hover:bg-slate-700 w-5/6 flex justify-between px-3 md:px-10 m-auto"
+        >
+          <div>How do i cancel ?</div>
+          <div><i class="fa-solid fa-plus"></i></div>
+        </div>
+        <div
+          class="p-6 bg-slate-800 hover:bg-slate-700 w-5/6 flex justify-between px-3 md:px-10 m-auto"
+        >
+          <div>Is Netflix Good for Kids ?</div>
+          <div><i class="fa-solid fa-plus"></i></div>
+        </div>
+      </div>
+    </div>
+    <!-- BOTTOM SIGN-UP -->
+    <div
+      class="flex-col flex xl:flex-row gap-5 justify-center w-[80%] m-auto md:w-[40%] my-16"
+    >
+      <div
+        class="text-sm rounded-md text-gray-300 px-5 py-3 border border-gray-400 xl:w-3/5 text-start"
+      >
+        Email Address
+      </div>
+      <div
+        class="text-sm rounded-xl px-1 md:px-8 py-3 bg-red-500 w-3/5 xl:w-auto flex m-auto items-center justify-center font-extrabold text-white"
+      >
+        Get Started <i class="fa-solid fa-chevron-right"></i>
+      </div>
+    </div>
+
+    <footer class="flex flex-col mx-8 lg:mx-16 text-gray-400 gap-8 my-16">
+      <div>Questions? Call <u>000-800-919-1743</u></div>
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-2 text-sm underline"
+      >
+        <div class="flex flex-col gap-2">
+          <div>FAQ</div>
+          <div>Investor Relations</div>
+          <div>Privacy</div>
+          <div>Speed Test</div>
+        </div>
+        <div class="flex flex-col gap-2">
+          <div>FAQ</div>
+          <div>Investor Relations</div>
+          <div>Privacy</div>
+          <div>Speed Test</div>
+        </div>
+        <div class="flex flex-col gap-2">
+          <div>FAQ</div>
+          <div>Investor Relations</div>
+          <div>Privacy</div>
+          <div>Speed Test</div>
+        </div>
+        <div class="flex flex-col gap-2">
+          <div>FAQ</div>
+          <div>Investor Relations</div>
+          <div>Privacy</div>
+          <div>Speed Test</div>
+        </div>
+      </div>
+      <div class="flex">
+        <div
+          class="flex items-center gap-1 px-3 py-2 cursor-pointer md:py-1 border-[1px] border-[#5e5e5e] rounded-sm text-white"
+        >
+          <i class="fa-solid fa-language"></i>
+          <span class="hidden md:flex"> English</span>
+          <i class="fa-solid fa-caret-down"></i>
+        </div>
+      </div>
+      <div class="text-gray-300">Netflix India.</div>
+      <div>
+        This page is protected by Google reCAPTCHA to ensure you're not a bot.
+        <a class="text-blue-600 underline"> Learn more.</a>
+      </div>
+    </footer>
+  </body>
+</html>
