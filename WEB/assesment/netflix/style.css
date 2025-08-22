@@ -16,3 +16,7 @@
   background: radial-gradient(rgba(0, 0, 0, 0.249) 5%, black 90%);
   z-index: -1;
 }
+
+.boxes > img {
+  border-radius: 20px;
+}
