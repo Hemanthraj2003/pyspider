@@ -99,4 +99,26 @@
  *  log("Perfect Number!!!!")
  * else
  *  log("Not Perfect!!!")
- */
+ *
+ *
+ * let i = 0
+ * for (console.log("Hello"); i<=5; console.log("World!")){
+ *   console.log("Bye");i+=2;
+ * }
+ *
+ * @WHILE_LOOPS
+ *
+ * while(condition){
+ *      -----
+ *      -----
+ *      inc / dec
+ * }
+ *
+ * @WAP_TO_PRINT_EVEN_NUMBER_USING_WHILE
+ * let i =1;
+ * while(i<=10){
+ *      if(i%2 == 0) { console.log(i);}
+ *      i++;
+ * }
+ *
+ * */
