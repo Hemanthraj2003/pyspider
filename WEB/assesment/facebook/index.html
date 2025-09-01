@@ -8,15 +8,19 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body>
-    <div class="flex justify-evenly h-[100vh] items-center">
-      <div class="flex flex-col w-[35vw] gap-6">
-        <div class="text-blue-500 text-8xl">facebook</div>
+    <div
+      class="flex flex-col md:flex-row justify-evenly h-[100vh] items-center"
+    >
+      <div
+        class="flex flex-col md:w-[35vw] text-center md:text-start md:h-[50%] px-4 gap-6"
+      >
+        <div class="text-blue-500 text-6xl font-bold md:text-8xl">facebook</div>
         <div class="text-2xl">
           Facebook helps you connect and share with the people in your life
         </div>
       </div>
       <div>
-        <div class="bg-white rounded-xl w-[32vw] pb-8">
+        <div class="bg-white rounded-xl md:w-[32vw] pb-8">
           <form class="flex flex-col p-8 gap-8">
             <input type="text" placeholder="Email address or phone number" />
             <input type="password" placeholder="Password" />
