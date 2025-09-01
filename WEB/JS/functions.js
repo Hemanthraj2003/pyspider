@@ -16,9 +16,12 @@
  * 3. Function without parameter and with return value
  * 4. Function with parameter and with return value
  *
+ * ///////////////////////////////////
+ * //                               //
+ * //    1. General Function:       //
+ * //                               //
+ * ///////////////////////////////////
  *
- *
- * 1. General Function:
  *  -> these functions are defined with function keyword followed by function name
  *    syntax:
  *        function functionName(parameters){
@@ -89,11 +92,53 @@ function Example() {
 function checkEven(number) {
   return number % 2 == 0 ? "EVEN" : "ODD";
 }
-console.log(checkEven(10));
-
-console.log(checkEven(11));
 
 function example01(name = "", age = 0, address = "") {
   // name = "example";
   console.log(name, address, age);
 }
+
+////////////////////////////////////
+//                                //
+//  2. Anonymous Function:        //
+//                                //
+////////////////////////////////////
+
+/**
+ * -> these functions are defined without any name and assigned to a variable
+ * syntax:
+ *      let variableName = function(parameters){
+ *        // code to be executed
+ *      }
+ * -> function can be invoked by calling the variable name followed by parenthesis example variableName();
+ *
+ * @scenarios :
+ *
+ * @scene_01 : Function without parameter and without return value
+ * let variableName = function(){
+ *   // code to be executed
+ *  }
+ *
+ * variableName()
+ *
+ * @scene_02 : Function with parameter and without return value
+ * let variableName = funtion(parameters){
+ *    // code to be executed
+ * }
+ * variableName(arguments)
+ *
+ * @scene_03 : Function without parameter and with return value
+ * let variableName = function(){
+ *    // code to be executed
+ *    return(-- return value --)
+ * }
+ *
+ * @scene_04 : Function with parameter and with return value
+ * let variableName = function(paramters){
+ *    // code to be executed
+ *    return(--return value--)
+ * }
+ * variableName(arguments)
+ *
+ *
+ */
