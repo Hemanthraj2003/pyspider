@@ -198,3 +198,66 @@ console.log(add(10, 20));
  *
  *
  */
+
+//////////////////////////////////////////////
+//                                          //
+//  4. Self Invoking Function / Immediately //
+//     Invoked Function (IIF)               //
+//                                          //
+//////////////////////////////////////////////
+
+/**
+ *  These functions are invoked immediately after their definition.
+ *  These functions should be declared within the paranthesis by using general / anonymous / arrow functions.
+ *  These functions doesnt need an identifier to call/incoke , this function calls itself.
+ *  IIF functions only executes once.
+ *  syntax:
+ *      (function(parameters){
+ *        // code to be executed
+ *      })(arguments);
+ *
+ *  -> if there is only one parameter then we can skip the parenthesis
+ * syntax:
+ *      (function parameter {
+ *        // code to be executed
+ *      })(argument);
+ */
+// EXAMPLE
+let selfInvokedResult = (function (name) {
+  return "Hello " + name;
+})("Dinga");
+
+//////////////////////////////////////////////
+//                                          //
+//  5. Call Back Function and               //
+//     Higher Order Function.               //
+//                                          //
+//////////////////////////////////////////////
+
+/**
+ * -> A callback function is a function that is passed as an argument to another function and is executed after some operation is completed.
+ *
+ * syntax:
+ *      function higherOrderFunction(callback){
+ *        // code to be executed
+ *        callback();
+ *      }
+ *
+ *      function callbackFunction(){
+ *        // code to be executed
+ *      }
+ *
+ *      higherOrderFunction(callbackFunction);
+ *
+ * EXAMPLE
+ */
+function greet(name, callback) {
+  console.log("Hello " + name);
+  callback();
+}
+
+function callMe() {
+  console.log("I am callback function");
+}
+
+greet("Dinga", callMe);
