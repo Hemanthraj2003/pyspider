@@ -4,26 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      .red {
+        color: red;
+      }
+
+      .blue {
+        color: blue;
+      }
+    </style>
   </head>
   <body>
-    <h1 id="header">I Love JavaScript</h1>
-    <button onclick="clickHandler()">Click Me!</button>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus odit
-      quo odio! Accusantium facere aliquid voluptatum. Molestias debitis earum
-      voluptatum cum natus nihil eveniet! Quidem, voluptatum, voluptas optio
-      consectetur sapiente consequuntur earum deserunt error illum, ea iusto
-      eveniet vitae dignissimos? Cumque perspiciatis officiis asperiores
-      voluptatibus doloribus cupiditate nihil porro quibusdam?
-    </p>
-    <img src="../images/gekko.jpg" alt="" height="500" srcset="" />
+    <h1 class="red">Welcome to JavaScript!!!!</h1>
+
+    <button onclick="addRed()">Red Color</button>
+    <button onclick="addBlue()">Blue Color</button>
+
+    <button onclick="toggle()">Toggle Color</button>
   </body>
   <script>
-    const header = document.getElementById("header");
-    const clickHandler = () => {
-      header.style.cssText = `  background: yellow;
-      text-align: center;     `;
-      header.style.color = "red";
+    let h1Tag = document.getElementsByTagName("h1")[0];
+    const addRed = () => {
+      h1Tag.classList.remove("blue");
+      h1Tag.classList.add("red");
+    };
+
+    const addBlue = () => {
+      h1Tag.classList.remove("red");
+      h1Tag.classList.add("blue");
+    };
+
+    const toggle = () => {
+      h1Tag.classList.toggle("red");
+      h1Tag.classList.toggle("blue");
     };
   </script>
 </html>
