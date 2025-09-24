@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <table cellspacing="10">
+      <tr>
+        <td colspan="4" class="display">
+          <input type="text" placeholder="0" />
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" onclick="clearScreen()">CE</td>
+        <td onclick="getValue(event)">/</td>
+        <td onclick="getValue(event)">*</td>
+      </tr>
+      <tr>
+        <td onclick="getValue(event)">7</td>
+        <td onclick="getValue(event)">8</td>
+        <td onclick="getValue(event)">9</td>
+        <td onclick="getValue(event)">-</td>
+      </tr>
+      <tr>
+        <td onclick="getValue(event)">4</td>
+        <td onclick="getValue(event)">5</td>
+        <td onclick="getValue(event)">6</td>
+        <td onclick="getValue(event)">+</td>
+      </tr>
+      <tr>
+        <td onclick="getValue(event)">1</td>
+        <td onclick="getValue(event)">2</td>
+        <td onclick="getValue(event)">3</td>
+        <td onclick="calulate()" rowspan="2">=</td>
+      </tr>
+      <tr>
+        <td onclick="getValue(event)">%</td>
+        <td onclick="getValue(event)">0</td>
+        <td onclick="getValue(event)">.</td>
+      </tr>
+    </table>
+    <script src="script.js"></script>
+  </body>
+</html>

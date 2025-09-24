@@ -2,41 +2,76 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      .red {
-        color: red;
-      }
+    <title>Simple Form Validation</title>
+  </head>
+  <body>
+    <h2>Registration Form</h2>
 
-      .blue {
-        color: blue;
+    <form id="myForm">
+      <label> Name: <input type="text" id="name" /> </label>
+      <br /><br />
+      <label> Email: <input type="text" id="email" /> </label>
+      <br /><br />
+      <button type="submit">Submit</button>
+    </form>
+
+    <p id="errorMsg" style="color: red"></p>
+
+    <script>
+      document
+        .getElementById("myForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault(); // stop form from refreshing the page
+
+          let name = document.getElementById("name").value.trim();
+          let email = document.getElementById("email").value.trim();
+          let errorMsg = document.getElementById("errorMsg");
+
+          if (name === "" || email === "") {
+            errorMsg.textContent = "❌ All fields are required!";
+          } else {
+            errorMsg.textContent = "✅ Form submitted successfully!";
+          }
+        });
+    </script>
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Digital Clock</title>
+    <style>
+      body {
+        font-family: monospace;
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+      }
+      #clock {
+        font-size: 48px;
+        background: black;
+        color: lime;
+        padding: 20px;
+        border-radius: 10px;
       }
     </style>
   </head>
   <body>
-    <h1 class="red">Welcome to JavaScript!!!!</h1>
+    <div id="clock">--:--:--</div>
 
-    <button onclick="addRed()">Red Color</button>
-    <button onclick="addBlue()">Blue Color</button>
-
-    <button onclick="toggle()">Toggle Color</button>
+    <script>
+      function updateClock() {
+        const now = new Date();
+        let h = String(now.getHours()).padStart(2, "0");
+        let m = String(now.getMinutes()).padStart(2, "0");
+        let s = String(now.getSeconds()).padStart(2, "0");
+        document.getElementById("clock").textContent = `${h}:${m}:${s}`;
+      }
+      setInterval(updateClock, 1000); // update every second
+      updateClock(); // run once immediately
+    </script>
   </body>
-  <script>
-    let h1Tag = document.getElementsByTagName("h1")[0];
-    const addRed = () => {
-      h1Tag.classList.remove("blue");
-      h1Tag.classList.add("red");
-    };
-
-    const addBlue = () => {
-      h1Tag.classList.remove("red");
-      h1Tag.classList.add("blue");
-    };
-
-    const toggle = () => {
-      h1Tag.classList.toggle("red");
-      h1Tag.classList.toggle("blue");
-    };
-  </script>
 </html>
